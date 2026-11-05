@@ -1,0 +1,8 @@
+<?php
+// Require the root entry point to use PHP so the database bridge is included.
+DirectoryIndex index.php index.html
+Options -Indexes
+
+<FilesMatch "^(config\.php|config\.example\.php|schema\.sql|INSTALL_MYSQL_AR\.md)$">
+  Require all denied
+</FilesMatch>
